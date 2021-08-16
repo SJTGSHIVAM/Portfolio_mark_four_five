@@ -12,6 +12,18 @@
   --secondary: #ffffff;
   --light: #2565b9;
 }
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+body > * {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 .nav {
   display: grid;
@@ -83,7 +95,7 @@ section.header p {
   border-radius: 8px;
   padding: 20px;
   color: var(--secondary);
-  margin: 100px 10px;
+  margin: 50px 10px;
 }
 
 .card p {
@@ -242,4 +254,10 @@ section.blogs {
 
 .mr {
   margin-right: 10px;
+}
+.mt0 {
+  margin-top: 0;
+}
+.mb0 {
+  margin-bottom: 0;
 }

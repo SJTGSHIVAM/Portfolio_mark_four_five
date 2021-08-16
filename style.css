@@ -8,9 +8,9 @@
 }
 
 :root {
-  --primary: #1d3049;
+  --primary: #000;
   --secondary: #ffffff;
-  --light: #2565b9;
+  --light: #0a8176;
 }
 html,
 body {

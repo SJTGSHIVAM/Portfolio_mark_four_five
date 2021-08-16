@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+:root {
+    --primary: #1d3049;
+    --secondary: #ffffff;
+    --light: #2565b9;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: var(--primary);
+    padding: 10px;
+}
+
+.nav ul {
+    list-style: none;
+    float: right;
+    padding: 10px;
+}
+
+.nav ul li {
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: var(--secondary);
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 30px;
+    color: var(--secondary);
+}
+
+
+section.header {
+    background-image: url("../img/webdeveloper.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.header h1 {
+    text-align: center;
+    font-size: 60px;
+    color: var(--secondary);
+}
+
+section.header p {
+    text-align: center;
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+
+.middleSection {
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--primary);
+    border-radius: 8px;
+    padding: 20px;
+    color: var(--secondary);
+    margin: 100px 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: var(--secondary);
+    padding: 5px;
+    border-radius: 5px;
+    color: #03377c;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--primary);
+    text-align: center;
+    padding: 30px;
+    color: var(--secondary);
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 25px;
+}
+
+
+
+@media only screen and (max-width: 1028px) {
+    .nav {
+        grid-template-columns: 50% 50%;
+    }
+
+    section.header {
+        height: 30vh;
+    }
+
+
+    .middleSection {
+        grid-template-columns: 30% 30% 30%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 680px) {
+    .nav {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    section.header {
+        height: 30vh;
+    }
+
+
+    .logo {
+        padding: 20px;
+    }
+
+
+    .middleSection {
+        grid-template-columns: 30% 30% 30%;
+    }
+
+
+
+    .nav ul {
+        float: none;
+        background-color: var(--secondary);
+    }
+
+    .nav ul li {
+        margin: 10px;
+    }
+
+    .nav ul li a {
+        color: var(--primary);
+    }
+
+
+    section.header {
+        height: 30vh;
+        background-position: top;
+    }
+
+    section.header h1 {
+        text-align: center;
+        font-size: 30px;
+        color: var(--secondary);
+    }
+
+    section.header p {
+        text-align: center;
+        font-size: 16px;
+        color: var(--secondary);
+    }
+
+
+    .middleSection {
+        grid-template-columns: 90%;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .card {
+        margin: 20px;
+    }
+
+    .card p {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+/* blogs  */
+
+section.blogs {
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.heading h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    color: var(--primary);
+}
+
+.blogCards {
+    background-color: var(--light);
+    border-radius: 8px;
+    padding: 20px;
+    color: var(--secondary);
+    margin: 50px auto;
+    width: 90%;
+}
+
+.blogCards p {
+    margin-bottom: 20px;
+}
+
+.blogCards a {
+    text-decoration: none;
+    background-color: var(--secondary);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--light);
+}
+
+.projects h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mr {
+    margin-right: 10px;
+}
